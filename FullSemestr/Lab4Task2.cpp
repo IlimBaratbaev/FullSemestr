@@ -23,7 +23,7 @@
 //	}
 //	Fraction& operator/(const Fraction& R) {
 //		if (R.chislo == 0) {
-//			throw std::runtime_error("Деление на ноль невозможно");
+//			throw runtime_error("Деление на ноль невозможно");
 //		}
 //		chislo /= R.chislo;
 //		return *this;
@@ -42,7 +42,7 @@
 //	}
 //	Fraction& operator/(const double R) {
 //		if (R == 0) {
-//			throw std::runtime_error("Деление на ноль невозможно");
+//			throw runtime_error("Деление на ноль невозможно");
 //		}
 //		chislo /= R;
 //		return *this;

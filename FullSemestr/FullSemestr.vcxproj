@@ -127,23 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Lab5\Lab5\Lb5Task1.cpp" />
-    <ClCompile Include="..\..\Lab5\Lab5\Lb5Task2.cpp" />
-    <ClCompile Include="..\..\Lab5\Lab5\Task3.cpp" />
-    <ClCompile Include="..\..\Laboratory6\Laboratory6\Lb6Task1.cpp" />
-    <ClCompile Include="..\..\Laboratory6\Laboratory6\Lb6Task2.cpp" />
-    <ClCompile Include="..\..\Laboratory6\Laboratory6\Lb6Task3.cpp" />
-    <ClCompile Include="..\..\LaboratoryWork1\LaboratoryWork1\LB1Task1.cpp" />
-    <ClCompile Include="..\..\LaboratoryWork1\LaboratoryWork1\LB1Task2.cpp" />
-    <ClCompile Include="..\..\LaboratoryWork1\LaboratoryWork1\LB1Task3.cpp" />
-    <ClCompile Include="..\..\LaboratoryWork2\LaboratoryWork2\Lb2Task1.cpp" />
-    <ClCompile Include="..\..\LaboratoryWork2\LaboratoryWork2\Lb2Task2.cpp" />
-    <ClCompile Include="..\..\LaboratoryWork2\LaboratoryWork2\LbTask3.cpp" />
-    <ClCompile Include="..\..\LaboratoryWork3\LaboratoryWork3\Lb3Task1.cpp" />
-    <ClCompile Include="..\..\LaboratoryWork3\LaboratoryWork3\LB3Task2.cpp" />
-    <ClCompile Include="..\..\LB0Task3\LB0Task3\LB0Task1.cpp" />
-    <ClCompile Include="..\..\LB0Task3\LB0Task3\LB0Task2.cpp" />
-    <ClCompile Include="..\..\LB0Task3\LB0Task3\LB0Task3.cpp" />
+    <ClCompile Include="Lab0T1.cpp" />
+    <ClCompile Include="Lab0T2.cpp" />
+    <ClCompile Include="Lab0T3.cpp" />
+    <ClCompile Include="Lab1T1.cpp" />
+    <ClCompile Include="Lab1T2.cpp" />
+    <ClCompile Include="Lab1T3.cpp" />
+    <ClCompile Include="Lab2T1.cpp" />
+    <ClCompile Include="Lab2T2.cpp" />
+    <ClCompile Include="Lab2T3.cpp" />
+    <ClCompile Include="Lab3T1.cpp" />
+    <ClCompile Include="Lab3T2.cpp" />
+    <ClCompile Include="Lab4Task1.cpp" />
+    <ClCompile Include="Lab4Task2.cpp" />
+    <ClCompile Include="Lab4Task3.cpp" />
+    <ClCompile Include="Lab5T1.cpp" />
+    <ClCompile Include="Lab5T2.cpp" />
+    <ClCompile Include="Lab5T3.cpp" />
+    <ClCompile Include="Lab6T1.cpp" />
+    <ClCompile Include="LAb6T2.cpp" />
+    <ClCompile Include="Lab6T3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

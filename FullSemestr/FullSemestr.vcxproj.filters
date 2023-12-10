@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB1">
+      <UniqueIdentifier>{d03f9e33-bfb7-40f8-a612-4da8cacd05e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB0">
+      <UniqueIdentifier>{b7211a2f-8d15-4139-b235-2582a37bbd55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB2">
+      <UniqueIdentifier>{8305cf8a-e4a5-4d65-9d12-2adab5b973ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB3">
+      <UniqueIdentifier>{f9b989bd-c128-47a2-908c-65cb5cae1d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB4">
+      <UniqueIdentifier>{3b7f4ee2-a9e3-4f5d-8c23-33d0ecc3f57f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB5">
+      <UniqueIdentifier>{23822ac6-d4ea-4833-9fff-e303a7d1664a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB6">
+      <UniqueIdentifier>{37c70930-f9d0-4fbb-80a2-63e3bef7a159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB7">
+      <UniqueIdentifier>{9abd21d9-0b62-4e5a-8846-8a751591c38c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB8">
+      <UniqueIdentifier>{a2572ebf-1eec-49f9-b755-93b059c421cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LAB9">
+      <UniqueIdentifier>{53aaef8b-ff92-4037-a341-4bbc5daf3b79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\LaboratoryWork1\LaboratoryWork1\LB1Task1.cpp">
+      <Filter>Исходные файлы\LAB1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LaboratoryWork1\LaboratoryWork1\LB1Task2.cpp">
+      <Filter>Исходные файлы\LAB1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LaboratoryWork1\LaboratoryWork1\LB1Task3.cpp">
+      <Filter>Исходные файлы\LAB1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LB0Task3\LB0Task3\LB0Task1.cpp">
+      <Filter>Исходные файлы\LAB0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LB0Task3\LB0Task3\LB0Task2.cpp">
+      <Filter>Исходные файлы\LAB0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LB0Task3\LB0Task3\LB0Task3.cpp">
+      <Filter>Исходные файлы\LAB0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LaboratoryWork2\LaboratoryWork2\Lb2Task1.cpp">
+      <Filter>Исходные файлы\LAB2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LaboratoryWork2\LaboratoryWork2\Lb2Task2.cpp">
+      <Filter>Исходные файлы\LAB2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LaboratoryWork2\LaboratoryWork2\LbTask3.cpp">
+      <Filter>Исходные файлы\LAB2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LaboratoryWork3\LaboratoryWork3\Lb3Task1.cpp">
+      <Filter>Исходные файлы\LAB3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LaboratoryWork3\LaboratoryWork3\LB3Task2.cpp">
+      <Filter>Исходные файлы\LAB3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab5\Lab5\Lb5Task1.cpp">
+      <Filter>Исходные файлы\LAB5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab5\Lab5\Lb5Task2.cpp">
+      <Filter>Исходные файлы\LAB5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab5\Lab5\Task3.cpp">
+      <Filter>Исходные файлы\LAB5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Laboratory6\Laboratory6\Lb6Task1.cpp">
+      <Filter>Исходные файлы\LAB6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Laboratory6\Laboratory6\Lb6Task2.cpp">
+      <Filter>Исходные файлы\LAB6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Laboratory6\Laboratory6\Lb6Task3.cpp">
+      <Filter>Исходные файлы\LAB6</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

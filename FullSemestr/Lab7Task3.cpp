@@ -1,20 +1,19 @@
 //#include <iostream>
 //#include <stack>
 //#include <string>
-//
-//// Шаблон класса Стек
+//#include <cstdlib> 
+//#include <ctime>
+//using namespace std;
 //template <typename T>
 //class Stack {
 //private:
-//    std::stack<T> storage;
+//    stack<T> storage;
 //
 //public:
-//    // Поместить элемент в стек
 //    void push(const T& value) {
 //        storage.push(value);
 //    }
 //
-//    // Извлечь элемент из стека
 //    T pop() {
 //        if (!storage.empty()) {
 //            T topElement = storage.top();
@@ -22,46 +21,47 @@
 //            return topElement;
 //        }
 //        else {
-//            // В реальном приложении может иметь смысл бросить исключение
-//            std::cerr << "Стек пуст. Невозможно выполнить извлечение." << std::endl;
-//            return T(); // Возвращаем значение по умолчанию (для простоты)
+//            cerr << "Стек пуст. Невозможно выполнить извлечение." << endl;
+//            return T();
 //        }
 //    }
 //
-//    // Проверить, пуст ли стек
 //    bool isEmpty() const {
 //        return storage.empty();
 //    }
+//    void print() const {
+//        stack<T> tempStorage = storage; 
+//        while (!tempStorage.empty()) {
+//            cout << tempStorage.top() << " ";
+//            tempStorage.pop();
+//        }
+//        cout << endl;
+//    }
 //};
 //
-//// Пример использования шаблонного класса для моделирования Т-образного сортировочного узла
 //int main() {
-//    // Создаем два стека для каждого направления на железной дороге
-//    Stack<std::string> leftDirection;
-//    Stack<std::string> rightDirection;
-//
-//    // Добавляем вагоны разных типов в каждое направление
-//    leftDirection.push("Вагон типа A");
-//    leftDirection.push("Вагон типа A");
-//    leftDirection.push("Вагон типа B");
-//
-//    rightDirection.push("Вагон типа B");
-//    rightDirection.push("Вагон типа A");
-//    rightDirection.push("Вагон типа B");
-//
-//    // Демонстрация работы сортировочного узла
-//    std::cout << "Сортировочный узел:" << std::endl;
-//
-//    while (!leftDirection.isEmpty() || !rightDirection.isEmpty()) {
-//        if (!leftDirection.isEmpty()) {
-//            std::cout << "Левое направление: " << leftDirection.pop() << std::endl;
-//        }
-//
-//        if (!rightDirection.isEmpty()) {
-//            std::cout << "Правое направление: " << rightDirection.pop() << std::endl;
+//    setlocale(LC_ALL, "ru");
+//    Stack<int> leftDirection;
+//    Stack<int> rightDirection;
+//    Stack<int> unsortedDirections;
+//    srand(static_cast<unsigned>(time(0)));
+//    for (int i = 0; i < 10; ++i) {
+//        unsortedDirections.push(rand() % 2); 
+//    }
+//    unsortedDirections.print();
+//    cout << "Сортировочный узел:" << endl;
+//    int i;
+//    while (!unsortedDirections.isEmpty()) {
+//        i = unsortedDirections.pop();
+//        if (i == 0) {
+//            leftDirection.push(i);
+//        } 
+//        if (i == 1) {
+//            rightDirection.push(i);
 //        }
 //    }
-//
+//    leftDirection.print();
+//    rightDirection.print();
 //    return 0;
 //}
 //

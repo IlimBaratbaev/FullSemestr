@@ -1,8 +1,7 @@
 //#include <iostream>
 //#include <cstdlib>
 //#include <ctime>
-//
-//// Шаблон класса
+//using namespace std;
 //template <typename T>
 //class ArrayProcessor {
 //private:
@@ -11,26 +10,19 @@
 //    int size;
 //
 //public:
-//    // Конструктор
 //    ArrayProcessor(int size) : size(size) {
 //        array1 = new T[size];
 //        array2 = new T[size];
-//        // Инициализация генератора случайных чисел
 //        srand(static_cast<unsigned>(time(0)));
-//        // Заполнение массивов случайными значениями
 //        for (int i = 0; i < size; ++i) {
-//            array1[i] = static_cast<T>(rand() % 100 - 50); // Произвольные числа от -50 до 49
+//            array1[i] = static_cast<T>(rand() % 100 - 50); 
 //            array2[i] = static_cast<T>(rand() % 100 - 50);
 //        }
 //    }
-//
-//    // Деструктор
 //    ~ArrayProcessor() {
 //        delete[] array1;
 //        delete[] array2;
 //    }
-//
-//    // Метод для вычисления суммы элементов первого массива
 //    T calculateSum() {
 //        T sum = 0;
 //        for (int i = 0; i < size; ++i) {
@@ -38,8 +30,6 @@
 //        }
 //        return sum;
 //    }
-//
-//    // Метод для подсчета количества положительных элементов первого массива
 //    int countPositiveElements() {
 //        int count = 0;
 //        for (int i = 0; i < size; ++i) {
@@ -50,7 +40,6 @@
 //        return count;
 //    }
 //
-//    // Метод для вычисления произведения элементов с четными индексами второго массива
 //    T calculateProductOfEvenIndexedElements() {
 //        T product = 1;
 //        for (int i = 0; i < size; i += 2) {
@@ -58,9 +47,20 @@
 //        }
 //        return product;
 //    }
+//    void display() {
+//        cout << "Array1: ";
+//        for (int i = 0; i < size; i++) {
+//            cout << array1[i] << " ";
+//        }
+//        cout << endl;
+//        cout << "Array2: ";
+//        for (int i = 0; i < size; i++) {
+//            cout << array2[i] << " ";
+//        }
+//        cout << endl;
+//    }
 //};
 //
-//// Явная специализация класса для символьного типа
 //template <>
 //class ArrayProcessor<char> {
 //private:
@@ -72,9 +72,7 @@
 //    ArrayProcessor(int size) : size(size) {
 //        array1 = new char[size];
 //        array2 = new char[size];
-//        // Инициализация генератора случайных чисел
 //        srand(static_cast<unsigned>(time(0)));
-//        // Заполнение массивов случайными символами (ASCII-коды от 32 до 126)
 //        for (int i = 0; i < size; ++i) {
 //            array1[i] = static_cast<char>(rand() % 95 + 32);
 //            array2[i] = static_cast<char>(rand() % 95 + 32);
@@ -87,35 +85,50 @@
 //    }
 //
 //    void displayAsciiCodes() {
-//        std::cout << "ASCII-коды элементов первого массива: ";
+//        cout << "ASCII-коды элементов первого массива: ";
 //        for (int i = 0; i < size; ++i) {
-//            std::cout << static_cast<int>(array1[i]) << " ";
+//            cout << static_cast<int>(array1[i]) << " ";
 //        }
-//        std::cout << std::endl;
+//        cout << endl;
 //
-//        std::cout << "ASCII-коды элементов второго массива: ";
+//        cout << "ASCII-коды элементов второго массива: ";
 //        for (int i = 0; i < size; ++i) {
-//            std::cout << static_cast<int>(array2[i]) << " ";
+//            cout << static_cast<int>(array2[i]) << " ";
 //        }
-//        std::cout << std::endl;
+//        cout << endl;
+//    }
+//    void display() {
+//        cout << "Array1: ";
+//        for (int i = 0; i < size; i++) {
+//            cout << array1[i] << " ";
+//        }
+//        cout << endl;
+//        cout << "Array2: ";
+//        for (int i = 0; i < size; i++) {
+//            cout << array2[i] << " ";
+//        }
+//        cout << endl;
 //    }
 //};
 //
 //int main() {
-//    // Примеры использования шаблона класса на различных типах данных
+//    setlocale(LC_ALL, "ru");
+//    cout << "Целочисленные числа" << endl;
 //    ArrayProcessor<int> intProcessor(5);
-//    std::cout << "Сумма элементов первого массива (целые числа): " << intProcessor.calculateSum() << std::endl;
-//    std::cout << "Количество положительных элементов первого массива: " << intProcessor.countPositiveElements() << std::endl;
-//    std::cout << "Произведение элементов с четными индексами второго массива: "
-//        << intProcessor.calculateProductOfEvenIndexedElements() << std::endl;
-//
+//    intProcessor.display();
+//    cout << "Сумма элементов первого массива (целые числа): " << intProcessor.calculateSum() << endl;
+//    cout << "Количество положительных элементов первого массива: " << intProcessor.countPositiveElements() << endl;
+//    cout << "Произведение элементов с четными индексами второго массива: "
+//        << intProcessor.calculateProductOfEvenIndexedElements() << endl;
+//    cout << "Вещественные числа" << endl;
 //    ArrayProcessor<double> doubleProcessor(5);
-//    std::cout << "Сумма элементов первого массива (вещественные числа): " << doubleProcessor.calculateSum() << std::endl;
-//    std::cout << "Количество положительных элементов первого массива: " << doubleProcessor.countPositiveElements() << std::endl;
-//    std::cout << "Произведение элементов с четными индексами второго массива: "
-//        << doubleProcessor.calculateProductOfEvenIndexedElements() << std::endl;
-//
+//    cout << "Сумма элементов первого массива (вещественные числа): " << doubleProcessor.calculateSum() << endl;
+//    cout << "Количество положительных элементов первого массива: " << doubleProcessor.countPositiveElements() << endl;
+//    cout << "Произведение элементов с четными индексами второго массива: "
+//        << doubleProcessor.calculateProductOfEvenIndexedElements() << endl;
+//    cout << "Символы" << endl;
 //    ArrayProcessor<char> charProcessor(5);
+//    charProcessor.display();
 //    charProcessor.displayAsciiCodes();
 //
 //    return 0;

@@ -1,51 +1,42 @@
 //#include <iostream>
 //#include <cmath>
-//
+//using namespace std;
 //class AntiAircraftGun {
 //private:
-//    static double probabilityOfHit; // Вероятность попадания одного выстрела
-//
+//    static double probabilityOfHit; 
 //public:
-//    // Установить вероятность попадания
 //    static void setProbabilityOfHit(double p) {
 //        probabilityOfHit = p;
 //    }
 //
-//    // Метод для вычисления результата стрельбы
 //    static int shootDownTarget(int n) {
 //        for (int i = 0; i < n; ++i) {
-//            // Генерируем случайное число от 0 до 1
 //            double randomValue = static_cast<double>(rand()) / RAND_MAX;
 //
-//            // Если случайное число меньше вероятности попадания, цель сбита
 //            if (randomValue < probabilityOfHit) {
-//                return 1; // Цель уничтожена
+//                return 1;
 //            }
 //        }
-//        return 0; // Самолет не сбит после n выстрелов
+//        return 0;
 //    }
 //
-//    // Метод для вычисления оценочного значения вероятности поражения цели
 //    static double estimateHitProbability(int n) {
-//        return 1 - std::pow(1 - probabilityOfHit, n);
+//        return 1 - pow(1 - probabilityOfHit, n);
 //    }
 //};
 //
-//// Инициализация статической переменной
 //double AntiAircraftGun::probabilityOfHit = 0.0;
 //
 //int main() {
-//    // Установим вероятность попадания
-//    AntiAircraftGun::setProbabilityOfHit(0.2); // Пример: вероятность попадания 20%
+//    setlocale(LC_ALL, "ru");
+//    AntiAircraftGun::setProbabilityOfHit(0.2);
 //
-//    // Проведем стрельбу и выведем результат
 //    int shots = 10;
 //    int result = AntiAircraftGun::shootDownTarget(shots);
 //
-//    std::cout << "Результат стрельбы: " << (result == 1 ? "Цель уничтожена" : "Самолет не сбит") << std::endl;
+//    cout << "Результат стрельбы: " << (result == 1 ? "Цель уничтожена" : "Самолет не сбит") << endl;
 //
-//    // Выведем оценочное значение вероятности поражения цели
-//    std::cout << "Оценочная вероятность поражения цели: " << AntiAircraftGun::estimateHitProbability(shots) << std::endl;
+//    cout << "Оценочная вероятность поражения цели: " << AntiAircraftGun::estimateHitProbability(shots) << endl;
 //
 //    return 0;
 //}

@@ -4,35 +4,67 @@
 //private:
 //    double length;
 //    double width;
-//
 //public:
 //    Rectangle(double l, double w) : length(l), width(w) {}
+//    Rectangle(double s) : length(s), width(s) {}
+//    Rectangle() {}
 //
-//    double rect_area(double l, double w) const {
-//        return l * w;
+//    double rect_area() const {
+//        return length * width;
 //    }
 //    double rect_area(double side) const {
 //        return side * side;
 //    }
 //
-//    void print_rect_area(double l, double w) const {
-//        cout << "Площадь прямоугольника: " << rect_area(l, w) << endl;
-//    }
-//
-//    void print_rect_area(double side) const {
-//        cout << "Площадь квадрата: " << rect_area(side) << endl;
-//    }
+//    void print_rect_area() const {
+//        if (length == width) {
+//            cout << "Сторона = " << length << "\nПлощадь: " << rect_area(length) << endl;
+//            return;
+//        }
+//        cout << "Длина: " << length << "\tШирина 2: " << width << "\nПлощадь: " << rect_area() << endl;;
+//    }  
 //};
-//
+//void menu();
 //int main() {
-//    // Пример использования класса и методов
-//    Rectangle rectangle(4.0, 6.0);
-//    rectangle.print_rect_area(4.0, 6.0);
-//
-//    Rectangle square(5.0, 5.0);
-//    square.print_rect_area(5.0);
-//
+//    setlocale(LC_ALL, "");
+//    char choice = 'e';
+//    Rectangle rec;
+//    double s1, s2;
+//    menu();
+//    while (choice != '4') {
+//        cout << "Введите операцию: ";
+//        cin >> choice;
+//        switch (choice)
+//        {
+//        case '1':
+//            cout << "Введите сторону квадрата: ";
+//            cin >> s1;
+//            rec = Rectangle(s1);
+//            rec.print_rect_area();
+//            break;
+//        case '2':
+//            cout << "Введите длину прямоугольника: ";
+//            cin >> s1;
+//            cout << "Введите ширину прямоугольника: ";
+//            cin >> s2;
+//            rec = Rectangle(s1, s2);
+//            rec.print_rect_area();
+//            break;
+//        case '3':
+//            menu();
+//            break;
+//        case '4':
+//            break;
+//        default:
+//            cout << "Нету выбранной операции!\n";
+//            break;
+//        }
+//    }
 //    return 0;
+//}
+//void menu() {
+//    cout << "1 - квадрат\t2 - прямоугольник\t3 - меню\t4 - выход";
+//    cout << "\nВыберите операцию: ";
 //}
 //
 ///*3.	Создать класс, в котором перегружается метод rect_area().  
